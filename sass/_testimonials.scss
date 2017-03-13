@@ -1,0 +1,128 @@
+.testimonials{
+	background-repeat:no-repeat;
+	// background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	background-color: darken($glendaleGreen, 10%);
+	padding: 10%;
+}
+
+#carousel {
+	position: relative;
+	width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: $glendaleGreen;
+    padding: 5%;
+}
+
+#slides {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	// padding: 5%;
+	ul {
+		list-style: none;
+		width:100%;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		li {
+			width:100%;
+			float: left;
+			text-align: center;
+			position: relative;
+			padding: 0;
+			margin: 0;
+		}
+
+	}
+}
+
+
+.slide{
+	width: 70%;
+}
+/* Styling for prev and next buttons */
+.btn-bar{
+	width:100%;
+}
+
+ #buttons {
+	padding:0 0 5px 0;
+	width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#buttons a {
+	text-align:center;
+	display:block;
+	@include responsive-font(1.6vw, 16px, 26px);
+	float: left;
+	outline:0;
+	// margin:0 60px;
+	color:$glendaleGreen;
+	background: $glendaleWhite;
+	text-decoration:none;
+	display:block;
+	padding:9px;
+}
+
+a#prev:hover, a#next:hover {
+	color:darken($glendaleGreen, 5%);
+}
+
+.quote-phrase, .quote-author {
+	font-family:sans-serif;
+	font-weight:300;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.quote-phrase {
+	@include responsive-font(1.8vw, 16px, 30px);
+	font-weight: 500; 
+	color: $glendaleWhite; 
+}
+
+.quote-marks {
+	@include responsive-font(1.6vw, 16px, 26px);
+	// padding:0 3px 3px;
+	position:inherit;
+	color: $glendaleWhite;
+}
+
+.quote-author {
+	@include responsive-font(1.6vw, 16px, 26px);
+	height: 30px;
+	color: $glendaleWhite;
+}
+
+.quoteContainer, .authorContainer {
+display: table;
+width: 100%;
+}
+
+
+// All Media Queries
+
+// Landscape phones and tablet
+@media (max-width: 767px) {
+	#carousel{
+		padding: 15% 0 0 0;
+	}
+	#slides{
+		width: 90%;
+	}
+    
+}
+ 
+// Landscape phones and down
+@media (max-width: 480px) {
+ 
+}

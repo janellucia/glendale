@@ -1,0 +1,151 @@
+
+h2{
+	width: 100%;
+	padding: 2% 0;
+	color: $glendaleBlue;
+	font-weight: 600;
+	text-align: center;
+	@include responsive-font(3vw, 20px, 35px);
+}
+
+	.membership-type{
+			width: 70%;
+			margin: 0 auto;
+			display: flex;
+			justify-content: space-between;
+			padding: 2% 0;
+			.title-price{
+				width: 60%;
+				display: flex;
+				justify-content: space-between;				
+				.membership{
+					margin: 0px;
+					@include responsive-font(1.3vw, 12px, 24px);
+					background: transparent;
+				}
+				.price{
+					margin: 0px;
+					@include responsive-font(1.3vw, 12px, 24px);
+					// margin-left: 1%;
+				}
+			}
+			.add-to-cart{
+				width: 30%;
+				.wp_cart_button_wrapper{
+					float: right;
+					// border:1px solid red;
+					.wp-cart-button-form{
+						input[type=submit]{
+						background: $glendaleGreen;
+					    outline: 0;
+					    text-transform: uppercase;
+					    text-align: center;
+						padding: 3% 5%;
+				    	color: $glendaleWhite;
+				    	text-decoration: none;
+				    	letter-spacing: 1px;
+				    	@include responsive-font(1.3vw, 12px, 24px);
+
+					}
+					input[type=submit]:hover{
+						background: lighten($glendaleGreen, 10%);
+						outline: 0;
+					}
+					input[type=submit]:active{
+						background:darken($glendaleGreen, 10%);
+					}
+						}
+					}
+				// margin-left: 1%;
+			}
+		}
+
+
+.container{
+	.payments-title{
+		width: 100%;
+		padding: 2% 0;
+		color: $glendaleBlue;
+		font-weight: 600;
+		text-align: center;
+		@include responsive-font(3vw, 20px, 35px);
+
+	}
+	.membership-options{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		.membership-type:nth-child(even){
+			background: darken($glendaleWhite, 2%);
+		}
+	}
+	.shopping_cart{
+		display: flex;
+    	flex-direction: column;
+    	background: darken($glendaleWhite, 5%);
+    	.wspsc_cart_header_image{
+    		margin: 0 auto;
+    		width: 7%;
+    	}
+    	h2{
+    		width: 100%;
+			padding: 2% 0;
+			color: $glendaleBlue;
+			font-weight: 600;
+			text-align: center;
+			@include responsive-font(3vw, 20px, 50px);
+    	}
+    	table{
+    		tbody{
+				tr{
+
+				}
+				.wpspsc_checkout_form{
+					td{
+						form{
+							
+						}
+					}
+				}
+    		}
+    	}
+	}
+	
+}
+
+
+
+
+
+
+
+// All Media Queries
+
+// Landscape phones and tablet
+@media (max-width: 800px) {
+	// turn off wrapper margin 
+	.container{
+		.membership-options{
+			.membership-type{
+				width: 100%;
+			}
+		}
+	}
+	
+	
+    
+}
+ 
+// Landscape phones and down
+@media (max-width: 480px) {
+ 
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,242 @@
+.welcome-text{
+	width: 70%;
+	text-align: center;
+	margin: 5% auto;
+	@include responsive-font(2vw, 14px, 20px);
+	color: $glendaleBlue;
+}
+
+//calendar section area
+
+.events-welcome{
+	width: 100%;
+	display: flex;
+	// justify-content: flex-start;
+	align-items: flex-start;
+	list-style: none;
+	padding: 5% 0;
+
+	#tribe-events-adv-list-widget-3{
+		width: 30%;
+		background: $glendaleBlue;
+		z-index: 99;
+		padding: 0 2%;
+		.widget-title{
+			@include responsive-font(2vw, 14px, 35px);
+			color: $glendaleWhite;
+			text-align: center;
+			font-weight: 400;
+		}
+		.type-tribe_events{
+			.tribe-mini-calendar-event{
+				display: flex;
+				background: lighten($glendaleBlue, 10%);
+				height: 100%;
+				border-bottom: none;
+				.list-date{
+					width: 20%;
+					background: white;
+					margin:0;
+					.list-dayname{
+						color: $glendaleBlue;
+						@include responsive-font(1vw, 14px, 18px);
+						font-weight: 400;
+					}
+					.list-daynumber{
+						color: $glendaleBlue;
+						@include responsive-font(1vw, 14px, 18px);
+						font-weight: 400;
+					}
+				}
+				.list-info{
+					margin: 0;
+					padding: 0 5%;
+					.tribe-events-title{
+						@include responsive-font(1.3vw, 14px, 18px);
+						a{
+							color: $glendaleWhite;
+						}
+						a:hover{
+							color: $glendaleLightBlue;
+						}
+					}
+					.tribe-events-duration{
+						@include responsive-font(1vw, 12px, 16px);
+						color: $glendaleWhite;
+					}
+					.tribe-events-location{
+						@include responsive-font(1vw, 12px, 16px);
+						color: $glendaleWhite;
+						.tribe-events-venue{
+							a{
+								color: $glendaleWhite;
+							}
+							a:hover{
+								color: $glendaleLightBlue;
+							}
+						}
+					}
+				}
+
+			}
+		}
+		.tribe-events-widget-link{
+			a{
+				color: $glendaleWhite;
+				@include responsive-font(1.3vw, 14px, 18px);
+			}
+		}
+	}
+	#tribe-mini-calendar-2{
+		width: 80%;
+		height: 100%;
+		.widget-title{
+			display: none;
+		}
+		.tribe-mini-calendar-wrapper{
+			.tribe-mini-calendar-grid-wrapper{
+				.tribe-mini-calendar{
+					.tribe-mini-calendar-nav{
+						tr{
+							td{
+								background: white;
+								@include responsive-font(4vw, 16px, 24px);
+								border: 1px solid white;
+								color: white;
+								div{
+									.tribe-mini-calendar-nav-link{
+										span{
+
+										@include responsive-font(4vw, 16px, 24px);
+										color: $glendaleBlue;
+
+										}
+									}
+									#tribe-mini-calendar-month-0{
+										@include responsive-font(4vw, 16px, 24px);
+										color:$glendaleBlue;
+									}
+								}
+							}
+						}
+					}
+					thead{
+						tr{
+							th{
+								background: $glendaleLightBlue;
+								color: white;
+								@include responsive-font(1vw, 12px, 20px);
+								border: 1px solid $glendaleWhite;
+								height: 30px;
+
+							}
+
+						}
+					}
+					tbody{
+						tr{
+							td{
+								height: 80px;
+							}
+							.tribe-events-present{
+								background: $glendaleLightBlue;
+							}
+							.tribe-events-has-events{
+								background: $glendaleBlue;
+								.tribe-mini-calendar-day-link{
+									background: darken($glendaleBlue, 2%);
+								}
+							}
+						}
+					}
+				}
+
+			}
+			.tribe-mini-calendar-list-wrapper{
+				display: none;
+			}
+		}
+		
+	}
+}
+
+
+//calendar list style
+
+.tribe-events-loop{
+	.tribe-events-day-time-slot{
+		.type-tribe_events{
+		.tribe-events-list-event-title{
+			// text-align: center;
+			@include responsive-font(2vw, 14px, 20px);
+			color: $glendaleBlue;
+			margin: 0;
+		}
+		.tribe-events-event-meta{
+			.time-details{
+				text-align: center;
+				margin: 0;
+			}
+			.tribe-events-venue-details{
+				text-align: center;
+				margin: 0;
+				.tribe-address{
+					display: none;
+				}
+			}
+		}
+		.tribe-events-event-image{
+			width: 90%;
+		}
+		.tribe-events-list-event-description{
+			display: flex;
+			flex-wrap: wrap;
+		}
+	}
+	}
+	p{
+		.tribe-events-list-separator-month{
+			display: flex;
+			span{
+				width: 100%;
+				text-align: center;
+				@include responsive-font(2vw, 14px, 20px);
+				color: $glendaleBlue;
+				
+			}
+		}
+	}
+	.type-tribe_events{
+		.tribe-events-list-event-title{
+			// text-align: center;
+			@include responsive-font(2vw, 14px, 20px);
+			color: $glendaleBlue;
+		}
+		.tribe-events-event-meta{
+			.author, .location{
+				.tribe-event-schedule-details{
+					text-align: center;
+				}
+				.tribe-events-venue-details{
+					text-align: center;
+					.tribe-address{
+						display: none;
+					}
+				}
+
+			}
+		}
+		.tribe-events-event-image{
+			width: 100%;
+		}
+		.tribe-events-list-event-description{
+			display: flex;
+			flex-wrap: wrap;
+		}
+	}
+}
+
+
+
+
+

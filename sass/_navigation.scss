@@ -1,0 +1,212 @@
+header{
+	width: 100%;
+	border-bottom: 1px solid darken($glendaleWhite, 10%);
+}
+.top-menu{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: $glendaleBlue;
+	padding: 0 3%;
+	.header-contact{
+		// width: 30%;
+		display: flex;
+		justify-content: space-around;
+		a{
+			color: $glendaleWhite;
+			@include responsive-font(1vw, 8px, 20px);
+			font-weight: 300;
+			letter-spacing: 1.5px;
+			margin-right: 25px;
+		}
+		a:hover{
+			color: lighten($glendaleGreen, 20%);
+		}
+	}
+	input[type="search"]{
+		padding: 0;
+		border-radius: 10px;
+		background: $glendaleBlue;
+		color: $glendaleWhite;
+		@include responsive-font(1vw, 8px, 20px);
+		border: none;
+		outline: none;
+	}
+	input[type="search"]:active{
+		background: $glendaleWhite;
+		color: $glendaleBlue;
+	}
+	input[type="search"]:focus{
+		background: $glendaleWhite;
+		color: $glendaleBlue;
+		padding: 2px 5px;
+	}
+	input[type="submit"]{
+		background: transparent;
+		border: none;
+		outline: none;
+		padding:3px;
+		width: 25px;
+		border-radius: 10px;
+		margin-left: -30px;
+		color: $glendaleBlue;
+	}
+}
+
+
+// front-page nav area starts here!
+
+.header-front-page {
+	.nav{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 2%;
+	.logo{
+		width: 20%;
+	}
+  	.menu {
+  		width: 75%;
+      	padding:0;
+      	margin:0;
+      	display: flex;
+      	align-items: center;
+      	justify-content: flex-end;
+      	padding: 2% 0;
+      	width: 100%;
+      	li {
+	        display: inline-block;
+	        float: left;
+	        list-style: none;
+	        padding: 0 0 0 5px;
+	        margin-right: 10px;
+	        font-family: 'Josefin Sans', sans-serif;
+	        a{
+	           @include responsive-font(1vw, 10px, 20px);
+	           margin: 0 15px;
+	           color: $glendaleBlack;
+	           i{
+	           	color: white;
+	           }
+	         }
+	         a:hover{
+	           color: $glendaleGreen;
+	         }
+      	}
+      	li:nth-child(7){
+			background: #0084b4;
+			margin: 0;
+			padding: 1% 0;
+			display: flex;
+		}
+		li:nth-child(8){
+			background: #3b5998;
+			margin: 0;
+			padding: 1% 0;
+			display: flex;
+		}
+		li:last-child{
+			background: #fb3958;
+			margin: 0;
+			padding: 1% 0;
+			display: flex;
+
+		}
+    }
+}
+  	.menuIcon {
+	    display: none;
+	    background: #fff;
+	    width: 100%;
+	    align-items: center;
+	    .res-logo {
+	    	width: 10%;
+	      	img{
+	      		width: 100%;
+	      	}
+
+	    }
+	    .hammy {
+	    	width: 7%;
+	    	display: inline-block;
+	    	color: $glendaleBlack;
+	    }
+	}
+
+	.fix-search{
+		background: rgba(grey, 0.5);
+		height: 10vh;
+		transition: 0.8s;
+		margin-top: 0;
+	}
+}
+
+// All Media Queries
+
+
+ 
+// Landscape phones and down
+@media (max-width: 768px) {
+ //start hamburger menu styling
+  .header-front-page {
+  	.nav{
+		display: flex;
+		justify-content: space-between;
+		.logo{
+			display: none;
+		}
+	    .menu {
+	        flex-direction: column;
+	        max-height: 0;
+	        overflow: hidden;
+	        float: none;
+	        text-align: center;
+	        width: 100%;
+	        padding: 0;
+	        border-bottom: none;
+	        &.menuOpen {
+	          max-height: 960px;
+	        }
+	        li {
+	          display: block;
+	          width: 100%;
+	          background: #fff;
+	          padding: 2% 0;
+	          margin: 0;
+	          border-bottom:1px solid $glendaleLightGrey;
+	          a {
+	            color: $glendaleBlack;
+	            width: 100%;
+	          }
+	        }
+	    }
+	    .social-home{
+	    	display: none;
+	    }
+    }
+      .menuIcon {
+        display: inline-block;
+        text-align: right;
+        padding: 3%;
+        border-bottom:1px solid $glendaleLightGrey;
+        .res-logo{
+          width: 10%;
+          img{
+            float: left;
+            width: 25%;          
+          }
+        }
+        .hammy{
+            @include responsive-font(5vw, 30px, 70px);
+          .fa-search{
+            color: $glendaleBlack;
+          }
+        }
+      }
+}
+
+
+}
+
+
+
+

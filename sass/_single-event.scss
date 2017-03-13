@@ -1,0 +1,28 @@
+#tribe-events{
+	.tribe-events-content{
+		display: flex;
+		flex-wrap:wrap;
+		h1, h2, h3, h4, h5, h6{
+			display: block;
+		    width: 100%;
+		    text-align: center;
+		}
+		.wpcf7{
+			margin: 0 auto;
+		}
+		.tribe-events-back{
+			a{
+				text-decoration: none;
+
+			}
+		}
+		.tribe-events-single-event-title{
+			@include responsive-font(1.3vw, 12px, 24px);
+
+		}
+		.tribe-events-schedule{
+			@include responsive-font(1.3vw, 12px, 24px);
+
+		}
+	}
+}

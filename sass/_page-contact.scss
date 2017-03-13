@@ -1,0 +1,135 @@
+
+
+.contact-boxes{
+	background: $glendaleWhite;
+	padding: 5% 0;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	.contact-box{
+		width: 30%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		i{
+			font-size: 100px;
+			color: $glendaleLightGrey;
+			// height: 100px;
+		}
+		a{
+			@include responsive-font(1.3vw, 8px, 24px);
+			text-align: center;
+		}
+	}
+}
+
+.contact-form-area{
+		.contact-form{
+			background: $glendaleLightGrey;
+			// margin-top: -400px;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+		h2{
+			@include responsive-font(2vw, 14px, 35px);
+			color: $glendaleWhite;
+		}
+		.wpcf7{
+				width: 80%;
+			form{
+				width: 60%;
+				margin: 0 auto;
+				p{
+					label{
+						@include responsive-font(1vw, 12px, 20px);
+						color:  $glendaleWhite;
+						height: 30px;
+						letter-spacing: 1px;
+						text-transform: uppercase;
+					}
+					input[type="text"]{
+						width: 100%;
+						margin: 0 auto;
+					}
+					input[type="email"]{
+						width: 100%;
+						margin: 0 auto;
+					}
+					textarea{
+						width: 100%;
+						margin: 0 auto;
+						height:100px;
+					}
+					input[type="submit"]{
+						width: 60%;
+						background: $glendaleBlue;
+						color: $glendaleWhite;
+						border: 1px solid $glendaleBlue;
+						text-transform: uppercase;
+						letter-spacing: 3px;
+						font-weight: 600;
+					}
+				}
+			}
+		}
+	}
+
+}
+.map{
+	width: 100%;
+	height: 400px;
+}
+
+.contact-numbers{
+	h2{
+		width: 100%;
+		text-align: center;
+		margin: 5% 0;
+		@include responsive-font(3vw, 20px, 35px);
+		color: $glendaleBlue;
+	}
+	width: 80%;
+	max-width: 900px;
+	margin: 0 auto;
+	.each-person{
+		display: flex;
+		justify-content: space-between;
+		align-item: center;
+		p{
+			width: 33%;
+			text-align: center;
+		}
+
+	}
+}
+
+
+
+// All Media Queries
+
+// Landscape phones and tablet
+@media (max-width: 800px) {
+	.contact-boxes{
+		// flex-direction: column;
+		.contact-box{
+			width: 80%;
+			i{
+				font-size: 50px;
+			}
+		}
+	}
+	
+    
+}
+ 
+// Landscape phones and down
+@media (max-width: 480px) {
+ 
+}
+
+

@@ -1,0 +1,135 @@
+/*!
+* Theme Name: Glendale Tennis Club
+* Theme URI: http://glendaletennis.org.com;
+* Description: Glendale Tennis Club Theme created by Janel Lucia.
+* Version: 1.0
+* Author: Janel Lucia
+* Author URI: http://janellucia.com
+*/
+
+@import 'normalize';
+@import 'variables';
+@import 'responsiveFont';
+@import 'typography';
+
+@import 'navigation';
+@import 'sidebar';
+@import 'comments';
+@import 'footer';
+
+@import 'front-page';
+@import 'testimonials';
+
+@import 'page-contact';
+@import 'page-events';
+@import 'single-event';
+@import 'page-membership';
+@import 'open-modal';
+@import 'page-blog-leagues';
+@import 'page-lessons';
+@import 'page-payments';
+
+@import 'junior-test';
+
+
+
+/*
+====================================
+Default Styling
+====================================
+*/
+
+img {
+	max-width: 100%;
+}
+
+body {
+	color: $glendaleBlack;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	letter-spacing: 1.5px;
+	line-height: 1.5;
+
+}
+
+.container {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.content {
+	float: left;
+	width: 65%;
+	margin-right: 5%;
+}
+
+.full {
+	width: 100%;
+}
+.main{
+}
+
+//back to top
+a.back-to-top {
+	display: none;
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	z-index: 999;
+	right: 10px;
+	bottom: 10px;
+	background: $glendaleGreen;
+	border: 1px solid $glendaleGreen;
+	color: white;
+	text-decoration: none;
+	.fa-angle-up{
+		text-align: center;
+		width: 40px;
+		line-height: 1.2;
+		height: 40px;
+		font-size: 30px;
+	}
+}
+
+//map styling 
+.acf-map {
+	width: 100%;
+	height: 400px;
+	border: #ccc solid 1px;
+	margin: 20px 0;
+}
+
+/* fixes potential theme css conflict */
+.acf-map img {
+   max-width: inherit !important;
+}
+
+
+// All Media Queries
+
+// Landscape phones and tablet
+@media (max-width: 800px) {
+	// turn off wrapper margin 
+	.container{
+		width: 95%;
+	}
+	.content{
+		width: 100%;
+	}
+	.sidebar{
+		display: none;
+	}
+	
+    
+}
+ 
+// Landscape phones and down
+@media (max-width: 480px) {
+ 
+}
+
+
+
+
+

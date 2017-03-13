@@ -1,0 +1,229 @@
+.logo-form{
+	width: 25%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.gform_wrapper{
+	background: darken($glendaleWhite, 5%);
+	form{
+		.gform_heading{
+			background: $glendaleWhite;
+			.gform_title{
+				width: 100%;
+				text-align: center;
+				margin: 5% 0;
+				@include responsive-font(3vw, 20px, 35px);
+				color: $glendaleBlue;
+			}
+			.gform_description{
+				width: 100%;
+				text-align: center;
+				margin: 2% auto;
+				@include responsive-font(1.3vw, 12px, 16px);
+				color: $glendaleBlue;
+			}
+		}
+		.validation_error{
+			color: red;
+			margin: 10px auto;
+			width: 80%;
+		}
+		.gform_body{
+			width: 80%;
+			margin: 0 auto;
+			.gform_fields{
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				justify-content: space-between;
+				padding: 0;
+				li{
+					width: 49%;
+					list-style: none;
+					margin: 1% 0;
+					.gfield_label, label{
+						width: 100%;
+						border: none;
+						@include responsive-font(1.5vw, 12px, 16px);
+						color: $glendaleBlue;
+					}
+					.ginput_container{
+						color: $glendaleBlue;
+						input, select, textarea{ 
+							width: 100%;
+						}
+						.gfield_checkbox{
+							li{
+							    font-weight: 600;
+								display: flex;
+							    input{
+							    	width: 10%;
+							    }
+							    label{
+							    	width: 80%;
+							    }
+							}
+						}
+					}
+					.validation_message{
+						color: red;
+					}
+				}
+				.address-field, .league-select, .terms {
+					width: 100%;
+				}
+				.total, .membership-select{
+					width: 60%;
+					margin: 10px auto;
+					display: flex;
+				    flex-direction: column;
+				    align-items: center;
+				    .gfield_label{
+				    	text-align: center;
+				    	@include responsive-font(1.5vw, 12px, 16px);
+				    }
+				    .ginput_container {
+				    	@include responsive-font(2vw, 18px, 28px);
+				    }
+				}
+				.total{
+				    background: $glendaleGreen;
+				}
+				.terms{
+					.gfield_label{
+						@include responsive-font(1vw, 8px, 12px);
+						font-weight: 400;
+						line-height: 1.1;	
+					}
+					
+				}
+				.gform_validation_container{
+					display: none;
+				}
+			}
+		}
+		.gform_footer{
+				padding: 15px 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			.gform_button{
+				width: 60%;
+			    background: $glendaleBlue;
+			    outline: 0;
+			    border: none;
+			    text-transform: uppercase;
+			    text-align: center;
+				padding: 10px 30px;
+		    	color: $glendaleWhite;
+		    	text-decoration: none;
+		    	letter-spacing: 1px;
+		    	@include responsive-font(1.5vw, 10px, 22px);
+
+			}
+			.gform_button:hover{
+				background: lighten($glendaleBlue, 15%);
+				outline: 0;
+				border: none;
+			}
+			.gform_button:active{
+				background:darken($glendaleBlue, 25%);
+				outline: 0;
+				border: none;
+			}
+		}
+	}
+}
+.basic-contact_wrapper{
+	background: transparent;
+	.gform_body{
+		.gform_fields{
+			.gfield{
+				.gfield_label{
+					color: $glendaleWhite;
+				}
+				
+			}
+		}
+	}
+	.gform_footer{
+				padding: 15px 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			.gform_button{
+				width: 60%;
+			    background: $glendaleGreen;
+			    outline: 0;
+			    border: none;
+			    text-transform: uppercase;
+			    text-align: center;
+				padding: 10px 30px;
+		    	color: $glendaleWhite;
+		    	text-decoration: none;
+		    	letter-spacing: 1px;
+		    	@include responsive-font(1.5vw, 10px, 22px);
+
+			}
+			.gform_button:hover{
+				background: lighten($glendaleGreen, 15%);
+				outline: 0;
+				border: none;
+			}
+			.gform_button:active{
+				background:darken($glendaleGreen, 25%);
+				outline: 0;
+				border: none;
+			}
+		}
+}
+
+
+
+
+
+// Landscape phones and down
+@media (max-width: 480px) {
+
+	.gform_wrapper{
+		form{
+			.gform_body{
+				.gform_fields{
+					li{
+						width: 100%;//did this
+					}
+				}
+			}
+		}
+		}//.gform_wrapper
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,47 @@
+.court-rules{
+	background: darken($glendaleWhite, 5%); 
+	margin-top: -5%;
+	padding: 0 0 15% 0;
+}
+.rules-wrap{
+	h2{
+		width: 100%;
+		text-align: center;
+		margin: 5% 0;
+		@include responsive-font(3vw, 20px, 35px);
+		color: $glendaleBlue;
+	}
+	p{
+
+	}
+	p:before{
+		content: "";
+	    display: inline-block;
+	    background: #20b6db;
+	    width: 15px;
+	    height: 15px;
+	    border-radius: 70px;
+	    margin: 0 10px;
+	}
+}
+
+.membership-page{
+	background: darken($glendaleWhite, 5%);
+}
+
+
+
+@media (max-width:768px) {
+
+}
+
+
+@media (max-width:480px) {
+
+}
+
+
+
+
+
+

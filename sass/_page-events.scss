@@ -1,0 +1,287 @@
+.events-wrapper{
+	// border: 1px solid red;
+	background: darken($glendaleWhite, 5%);
+	margin: 4% 0;
+
+	#tribe-events{
+		#tribe-events-content-wrapper{
+			display: flex;
+			flex-wrap:wrap;
+			#tribe-events-bar{
+				// order: 7;
+				display: none;
+				#tribe-bar-form{
+					background: lighten($glendaleBlue, 10%);
+					color: $glendaleWhite;
+					#tribe-bar-collapse-toggle{
+						background: lighten($glendaleBlue, 10%);
+					}
+					#tribe-bar-views{
+						.tribe-bar-views-inner{
+							background: lighten($glendaleBlue, 20%);
+							.tribe-bar-views-list{
+								li{
+									a{
+										background: lighten($glendaleBlue, 20%);
+										color: $glendaleWhite;
+										.tribe-icon-month{
+											color: $glendaleWhite;
+										}
+									}
+								}
+							}
+						}
+					}
+					.tribe-bar-filters{
+						.tribe-bar-filters-inner{
+							display: flex;
+							.tribe-bar-date-filter{
+								#tribe-bar-dates{
+									input[type="text"]{
+										color: $glendaleWhite;
+									}
+									input[type="text"]::placeholder{
+										color: $glendaleWhite;
+									}
+								}
+							}
+							.tribe-bar-search-filter{
+								input[type="text"]{
+									color: $glendaleWhite;
+								}
+								input[type="text"]::placeholder{
+									color: $glendaleWhite;
+								}
+							}
+							.tribe-bar-geoloc-filter{
+								input[type="text"]{
+									color: $glendaleWhite;
+								}
+								input[type="text"]::placeholder{
+									color: $glendaleWhite;
+								}
+							}
+						}
+						.tribe-bar-submit{
+							.tribe-events-button{
+								background: $glendaleBlue;
+							}
+						}
+					}
+
+				}
+			}
+			#tribe-events-content{
+				.tribe-events-page-title{
+					width: 100%;
+					padding: 2% 0;
+					color: $glendaleBlue;
+					font-weight: 600;
+					text-align: center;
+					@include responsive-font(2vw, 18px, 26px);
+				}
+				#tribe-events-header, #tribe-events-footer{
+					.tribe-events-sub-nav{
+						display: flex;
+						width: 100%;
+						justify-content: space-between;
+						.tribe-events-nav-previous{
+							width: 45%;
+							display: flex;
+							a{
+								@include responsive-font(1vw, 12px, 20px);
+								background: $glendaleBlue;
+								color: $glendaleWhite;
+								text-transform: uppercase;
+								padding: 5% 10%;
+								width: 100%;
+
+							}
+						}
+						.tribe-events-nav-next{
+							width: 45%;
+							display: flex;
+							a{
+								@include responsive-font(1vw, 12px, 20px);
+								background: $glendaleBlue;
+								color: $glendaleWhite;
+								text-transform: uppercase;
+								padding: 5% 10%;
+								width: 100%;
+							}
+						}
+					}
+				}
+				.tribe-events-calendar{
+
+				}
+			}
+		}
+	}
+}
+.sidebar{
+	#text-8{
+		width: 100%;
+		background: $glendaleBlue;
+		color: $glendaleWhite;
+		opacity: 0;
+	}
+	#tribe-events-adv-list-widget-2{
+		width: 100%;
+		background: $glendaleBlue;
+		z-index: 99;
+		padding: 0 2%;
+		.widget-title{
+			@include responsive-font(2vw, 14px, 35px);
+			color: $glendaleWhite;
+			text-align: center;
+			font-weight: 400;
+		}
+		.type-tribe_events{
+			.tribe-mini-calendar-event{
+				display: flex;
+				background: lighten($glendaleBlue, 15%);
+				height: 100%;
+				border-bottom: none;
+				margin: 1% 0;
+				padding: 1% 0;
+				.list-date{
+					width: 20%;
+					background: white;
+					margin:0;
+					.list-dayname{
+						color: $glendaleBlue;
+						@include responsive-font(1vw, 14px, 30px);
+						font-weight: 400;
+					}
+					.list-daynumber{
+						color: $glendaleBlue;
+						@include responsive-font(1vw, 14px, 30px);
+						font-weight: 400;
+					}
+				}
+				.list-info{
+					margin: 0;
+					padding: 0 5%;
+					.tribe-events-title{
+						@include responsive-font(1.3vw, 14px, 24px);
+						text-align: left;
+						margin-bottom: 0;
+						a{
+							color: $glendaleWhite;
+						}
+						a:hover{
+							color: $glendaleGreen;
+						}
+					}
+					.tribe-events-duration{
+						@include responsive-font(1vw, 12px, 20px);
+						color: $glendaleWhite;
+					}
+					.tribe-events-location{
+						@include responsive-font(1vw, 12px, 20px);
+						color: $glendaleWhite;
+						.tribe-events-venue{
+							a{
+								color: $glendaleWhite;
+							}
+							a:hover{
+								color: $glendaleGreen;
+							}
+						}
+					}
+				}
+
+			}
+		}
+		.tribe-events-widget-link{
+			a{
+				color: $glendaleWhite;
+				@include responsive-font(1vw, 12px, 20px);
+			}
+		}
+	}
+}
+.events-blog-section{
+	width: 100%;
+	margin: 2% 0;
+	
+.lessons-title{
+		width: 100%;
+		padding: 2% 0;
+		color: $glendaleBlue;
+		font-weight: 600;
+		text-align: center;
+		@include responsive-font(3vw, 20px, 50px);
+	}
+
+	.home-blog-posts{
+		width: 100%;
+		padding: 0 0 5% 0;
+		display: flex;
+		flex-wrap:wrap;
+		justify-content: space-between;
+		align-items: flex-start;
+		.home-post{
+			// padding: 1%;
+			width: 80%;
+			margin: 0 auto;
+			display: flex;
+			background: white;//it's here;
+			flex-direction: column;//here too!!
+		    justify-content: center;
+		    text-align: center;
+		    .home-post-picture{
+		    	width: 100%;
+		    	img{
+		    		width: 100%;
+		    		height: auto;
+		    		vertical-align: middle;
+		    	}
+		    }
+		    .post-content{
+		    	width: 100%;
+		    	padding: 0 5%;
+			    h4{
+						@include responsive-font(1.3vw, 13px, 24px);
+						// height: 10vh;
+				    }
+				    h4:after{
+				    	content: '';
+						border-bottom: 1px solid $glendaleBlack;
+						width: 100px;
+						// margin-bottom: 10px;
+						display: block;
+						margin: 0 auto;
+						margin-bottom: 10px;
+					}
+
+				    .home-entry-meta{
+						@include responsive-font(1vw, 12px, 18px);
+				    }
+				    p{
+				    	@include responsive-font(1vw, 14px, 20px);
+				    	// margin-top: 40px;
+
+				    }
+		    }
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
